@@ -8,5 +8,5 @@ This bash script makes creating a Laravel project on Cloud9 more easier for deve
 
 ## What it does
 After executing the command, the following happens:
-- PHP is upgraded from version 5.5to version 5.6.
+- PHP is upgraded to version 5.6.
 - Laravel is installed and a new Laravel project is created for you.
