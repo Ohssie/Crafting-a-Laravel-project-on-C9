@@ -1,14 +1,14 @@
 #!/bin/bash
 
 function upgradingPhp {
-    sudo add-apt-repository ppa:ondrej/php -y
+    sudo add-apt-repository -y ppa:ondrej/php
     sudo apt-get update -y
     sudo apt-get install libapache2-mod-php5.6 -y
     sudo a2dismod php5
     sudo a2enmod php5.6
-    sudo add-apt-repository ppa:ondrej/php5-compat -y
+    sudo add-apt-repository -y ppa:ondrej/php5-compat
     sudo apt-get update -y
-    sudo apt-get dist-upgrade -y
+    sudo apt-get --force-yes dist-upgrade -y
 }
 upgradingPhp
 
